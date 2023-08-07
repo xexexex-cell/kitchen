@@ -3,7 +3,7 @@
 
 }
 .container{
-    max-width: 1130px;
+   width: 1130px;
     margin: 0 auto;
 }
 .body{
@@ -19,9 +19,7 @@
     background-size: cover;
     
 }
-.container{
-    margin: 0px 166px;
-}
+
 .header_line{
     justify-content: space-around;
     padding-top: 50px;
@@ -388,49 +386,52 @@
     line-height: 30px;
     color: #000000;
 }
-.bar{
-    padding-top: 98px;
+.menu{
     background-image: url(/backgrounds/bar-1869656_1920\ 2.png);
-    height: 1034px;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
 }
-.cards_holder2{
-    margin-top: 300px;
+.menu-title{
+    font-size: 54px;
+    padding-top: 94px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 138px;
+    
+}
+.menu-item{
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 33%;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin-right: 20px;
+}
+.menu-items{
     display: flex;
     justify-content: center;
 }
-.card2{
-    text-align: center;
-    box-shadow: 10px 10px 40px 20px #0000001A;
-    height: 510px;
-    width: 349px;
-    margin-right: 31px;
-    background-color: #FFFFFF;
-    margin-top: -88px;
-}
-.card_image2{
-    width: 350px;
-    margin-top: 80px;
-}
-.card_title2{
-    margin-top: 22px;
-    font-family: 'Tinos';
-    font-style: normal;
-    font-weight: 400;
+.menu-text{
     font-size: 26px;
-    line-height: 30px;
-    color: #000000;
-}
-.card_descr2{
-    margin-top: 30px;
+    padding-top: 16px;
+    padding-bottom: 17px;
     font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 22px;
-    text-align: center;
-    color: #000000;
+}
+.manu-subtext{
+    font-size: 16px;
+    font-family: 'Tinos';
+}
+.menu-btn{
+    background-color: #cc6d1f;
+    text-decoration: none;
+    padding: 14px 67px;
+    color: #FFFFFF;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px 0px #454545;
+}
+.menu-button{
+    margin-top: 20px;
 }
 .button3{
     background: #D67E34;
@@ -600,151 +601,127 @@ color: #000000;
 .slider{
     margin-top: 100px;
 }
+.burger-menu{
+    display: none;
+}
 
-@media(max-width:1024px){
+@media(max-width:1450px){
+    .container{
+        max-width: 1120px;
+    }
+    .menu-items{
+        display: block;
+        text-align: -webkit-center;
+    }
+    .menu-item{
+        margin: 20px auto;
+        width: 600px;
+    }
     .header_title{
-        color: #9b0f0f;
+        position: static;
     }
-    .header{
-        height: 880px;
-        background-image: url(/backgrounds/HERO\ IMG.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+    .header_subtitle1::before, .header_subtitle1:after{
+        content: none !important;
+        display: none;
     }
-    
-        .button {
-        position: relative;
-        background-color: orangered;
-        width: 157px;
-        left: 60px;
-        height: 47px;
-        padding: 14px 16px;
-        margin-top: 10px;
-        /* margin-left: 0px; */
-        transition: 1s;
+    .lanch_title{
+        text-align: center;
     }
-
-    .phone_holder {
-        position: absolute;
-        margin-left: 570px;
-        margin-top: 150px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: stretch;
-        flex-direction: row;}
-        .phone_text {
-            position: absolute;
-            margin-left: 580px;
-            margin-top: 230px;
-            color: #FFFFFF;
-            font-family: 'Open Sans';
-            transition: 1s;}
-
-             .nav_items{
-               height: 19px;
-                left: 533px;
-                top: 74px;
-                text-decoration: none;
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 19px;
-                color: #FFFFFF;
-                margin-right: 20px;
-                transition: 0.4s;
-            }
-            
-            .histoty_image3 {
-                position: absolute;
-                z-index: 800;
-                left: 753px;
-                top: 1280px;}
-                .histoty_image2 {
-                    position: absolute;
-                    z-index: 900;
-                    left: 670px;
-                    top: 1490px;}
-                    .histoty_image1 {
-                        position: absolute;
-                        z-index: 999;
-                        left: 617px;
-                        top: 1265px;
-                    }
-                    .button2 {
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        justify-content: center;
-                        background-color: #FF7400;
-                        border-radius: 8px;
-                        margin-top: 50px;
-                        margin-left: 220px;
-                        width: 157px;
-                        height: 47px;
-                        padding: 5px 15px;
-                        transition: 1s;
-            }
-                        .gallery_holder{
-                            display: block;
-                            margin-top: 60px;}
-
-
-                        .galerry_down {
-                            margin-bottom: 20px;
-                            display: flex;
-                            /* margin-left: 118px; */
-                            justify-content: space-evenly;
-                            flex-direction: row;
-                            align-items: stretch;
-                            align-content: stretch;
-                            flex-wrap: nowrap;}
-                           .galerry1  .galerry_up1{
-                               
-                                margin-bottom: 20px;
-                                display: flex;
-                                justify-content: space-between;
-                                margin-left: 2px;
-                                display: none;
-                            }
-                            .galerry_up {
-                                display: none;
-                                margin-bottom: 20px;
-                                /* display: flex; */
-                                justify-content: space-between;
-                                margin-left: 2px;
-                            display: none;}
-                            .slider-container {
-                                display: flex;
-                                justify-content: center;
-                                /* align-items: center; */
-                                height: 100vh;}
-                                .cards_holder2 {
-                                    margin-top: 300px;
-                                    display: flex;
-                                    justify-content: center;
-                                    text-align: center;
-                                    margin-left: 24px;
-                                }                          
-                                .card2 {
-                                    text-align: center;
-                                    box-shadow: 10px 10px 40px 20px #0000001A;
-                                    height: 510px;
-                                    width: 260px;
-                                    margin-right: 31px;
-                                    background-color: #FFFFFF;
-                                    margin-top: -88px;}    
-                                    .card_image2 {
-                                        width: 260px;
-                                        margin-top: 80px;}  
-
-
+    .lanch_deckr{
+        text-align: center;
+    }
+    .button2{
+        text-align: center;
+        margin-top: 30px;
+        margin: 0 auto;
+    }
+    .history_img{
+        display: none;
+    }
+    .history_title,  .history_descr, .history_number {
+        width: auto;
+        text-align: center;
+    }
+    .menu .container{
+        max-width: 1000px;
+    }
 }
-
-@media all{
-    
+@media(max-width:1200px){
+    .lanch .container{
+            max-width: 1100px;
+        }
 }
-
+@media(max-width:1185px){
+    .lanch .container{
+        max-width: 100%;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .nav_items,.header_btn, .header_cart, .phone_text, .phone_holder, .button  {
+        display: none;
+    }
+    .header_line{
+        justify-content: space-between;
+    }
+    .burgers_img{
+        display: none;
+    }
+}
+@media(max-width:1112px){
+    .container{
+        max-width: 1000px;
+    }
+    .cards .container{
+        max-width: 1000px;
+    }
+    .dishes .container{
+        max-width: 1000px;
+    }
+    .cards_holder{
+        display: block;
+    }
+    .cards{
+        text-align: -webkit-center;
+    }
+    .card{
+        margin-top: 30px;
+    margin-bottom: 60px;
+    height: 360px;
+    }
+    .gallery_holder{
+        display: block;
+    }
+    .galerry1,.galerry2, .galerry_down{
+        display: block;
+        margin-left: 16px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .galerry_up1,.galerry_up{
+        justify-content: center;
+        text-align: center;
+    }
+    .galerry-photo1{
+       padding-right: 7px;
+    }
+    .galerry-photo2{
+        padding-left: 7px;
+    }
+    .galerry_up{
+        margin-top: 20px;
+    }
+    .dishes .container{
+        max-width: 1050px;
+    }
+}
+@media(max-width:1028px){
+    .lanch_title{
+        max-width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+}
 
