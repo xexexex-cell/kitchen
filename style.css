@@ -604,6 +604,27 @@ color: #000000;
 .burger-menu{
     display: none;
 }
+.burger-slide {
+    position: absolute;
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent !important;
+}
+
+.disp {
+    display: block !important;
+}
+
+/* Тут інші стилі за необхідності */
+
 
 @media(max-width:1450px){
     .container{
@@ -667,6 +688,23 @@ color: #000000;
     .burgers_img{
         display: none;
     }
+    .nav_items.block{
+        display: block;
+        margin-right: 0px;
+    }
+    .burger-menu{
+        text-align: center;
+        display: block;
+    }
+    .burger-active{
+        margin-left: 52px;
+        text-align: center;
+    }
+    .burger-slide.disp{
+        position: absolute;
+        margin-top: -30px;
+        margin-left: -37px;
+    }
 }
 @media(max-width:1112px){
     .container{
@@ -715,6 +753,11 @@ color: #000000;
     .dishes .container{
         max-width: 1050px;
     }
+    .burger-slide.disp{
+        position: absolute;
+        margin-top: -30px;
+        margin-left: -37px;
+    }
 }
 @media(max-width:1028px){
     .lanch_title{
@@ -723,5 +766,102 @@ color: #000000;
     .container{
         width: 100%;
     }
+    .burger-slide.disp{
+        position: absolute;
+        margin-top: -30px;
+        margin-left: -37px;
+    }
 }
-
+@media(max-width:583px){
+.menu-item{
+    width: 320px;
+}
+.lanch_title{
+    display: none;
+}
+.button2{
+    margin-top: 135px;
+}
+.lanch{
+    height: 230px;
+}
+.burger-slide.disp{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -37px;
+}
+}
+@media(max-width:535px){
+    .galerry_up,.galerry_up1{
+        display: none;
+    }
+    .galerry-photo1{
+        padding-right: 0px;
+    }
+    .galerry-photo2{
+        padding-left: 0px;
+    }
+    .header_title{
+        margin-top: 101px;
+    }
+    .card{
+        margin-right: 0px;
+    }
+    .burger-slide.disp{
+        position: absolute;
+        margin-top: -30px;
+        margin-left: -37px;
+    }
+  .carousel{
+    padding-top: 50px;
+  }
+}
+@media(max-width:344px){
+    .header{
+        height: 590px;
+    }
+    .header_title{
+        margin-top: 10px;
+    }
+.header_subtitle{
+    font-size: 55px;
+}
+.card{
+    width: 300px;
+    height: 380px;
+}
+.burger-slide.disp{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -37px;
+}
+.carousel{
+    display: none;
+}
+}
+@media(max-width:320px){
+.card{
+    width: 300px;
+    height: 380px;
+}
+.card_descr{
+    font-size: 20px;
+}
+.burger_text{
+    font-size: 15px;
+}
+.carousel{
+    display: none !important;
+}
+.history_number{
+    margin-top: 15px;
+}
+.burger-slide.disp{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -37px;
+}
+.carousel{
+    display: none;
+}
+}
