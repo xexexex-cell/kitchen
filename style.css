@@ -827,8 +827,22 @@ button {
     }
   .carousel{
     padding-top: 50px;
+    
   }
 }
+@media(max-width:372px){
+    .carousel{
+      display: none;
+    }
+    
+  }
+  @media(max-width:350px){
+    .carousel{
+      display: none;
+    }
+    
+  }
+
 @media(max-width:344px){
     .header{
         height: 590px;
